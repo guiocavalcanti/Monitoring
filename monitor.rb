@@ -13,7 +13,7 @@ end
 
 def ping(host = nil)
   host ||= @global_opts[:default_host]
-  result = `ping -c 5 #{host}`
+  result = `ping -c 10 #{host}`
 end
 
 logger.debug do
